@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tickets</title>
+</head>
+
+<body class="pagename">
+  <div data-widget="Tickets" class="tickets">
+    <button class="addTicket">Добавить тикет </button>
+  </div>
+  <div data-widget="modal" class='modal' id="modal-new-ticket">
+    <h3>Добавить тикет</h3>
+    <form data-id="modal-form">
+      Краткое описание
+      <input data-id="name" name="name" class="input" required>
+      Подробное описание
+      <textarea data-id="description" name="description" class="textarea" required></textarea>
+      <div class="controlModal">
+        <button data-sends="modal" class="btn okModal">Ок</button>
+        <button data-dismiss="modal" class="btn closeModal">Отмена</button>
+      </div>
+    </form>
+  </div>
+  <div data-widget="modal" class='modal' id="modal-red-ticket">
+    <h3>Изменить тикет</h3>
+    <form data-id="modal-form">
+      Краткое описание
+      <input data-id="name" name="name" class="input" required>
+      Подробное описание
+      <textarea data-id="description" name="description" class="textarea" required></textarea>
+      <div class="controlModal">
+        <button data-sends="modal" class="btn okModal">Ок</button>
+        <button data-dismiss="modal" class="btn closeModal">Отмена</button>
+      </div>
+    </form>
+  </div>
+  <div data-widget="modal" class='modal' id="modal-del-ticket">
+    <h3>Удалить тикет?</h3>
+    <div class="controlModalDel">
+      <button data-sends="modal" class="btn okModal">Ок</button>
+      <button data-dismiss="modal" class="btn closeModal">Отмена</button>
+    </div>
+  </div>
+</body>
+
+</html>
